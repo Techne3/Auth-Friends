@@ -29,8 +29,20 @@
 }
 
 .friendsInfo{
-  border:1px solid grey;
+  border:1px solid #40968e;
   margin:2% 2%;
   padding:2%;
   width:300px;
+}
+
+.loading{
+  margin:3%;
+}
+
+.login{
+  text-decoration: none;
+  color:#40968e;
+}
+.loginForm{
+  margin:3%;
 }

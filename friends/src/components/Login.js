@@ -24,7 +24,7 @@ const submit = e => {
     .then(res => {
         console.log(res.data)
         localStorage.setItem('token', res.data.payload);
-        //push user to a protected page
+        //push user to a protected page {friendsDisplay}
         props.history.push('/protected')
     })
     .catch(err => console.log(err.res))
@@ -32,6 +32,7 @@ const submit = e => {
 
 
     return ( 
+        <div className="loginForm">
         <form onSubmit={submit}>
             <input 
             type='text'
@@ -49,6 +50,7 @@ const submit = e => {
             />
             <button type='submit'>Login</button>
         </form>
+        </div>
      );
 }
  

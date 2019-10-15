@@ -6,7 +6,7 @@ const Nav = () => {
         <div>
             <h2>Auth-Friends</h2>
              <nav>
-                 <Link to='/login'>Login</Link>
+                 <Link to='/login' className="login">Login</Link>
              </nav>
         </div>
     );

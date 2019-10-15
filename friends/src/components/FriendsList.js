@@ -2,6 +2,8 @@ import React,{useState, useEffect} from 'react';
 import axiosWithAuth from  '../utils/axiosWithAuth';
 import FriendsDisplay from './FriendsDisplay';
 import AddNewFriend from './AddNewFriend'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner'
 
 const FriendsList = () => {
     const [friends, setFriends]=useState([ ]);
@@ -13,8 +15,13 @@ const FriendsList = () => {
     },[])
 
     if(friends.length === 0){
-        return (
-            <h1>Loading...</h1>
+        return(
+        <div className="loading">
+            <Loader 
+            type="Circles"
+            color="#40968e"
+            height={200} width={150} />
+        </div>
         )
     }
     

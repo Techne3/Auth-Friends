@@ -25,7 +25,7 @@ const AddNewFriend = ({createNew}) => {
         setNewFriend({
             name:'',
             email: '',
-            age:''
+            age:' '
 
         })
     }
