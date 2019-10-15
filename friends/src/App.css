@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+
+.friendsWrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.friendsInfo{
+  border:1px solid grey;
+  margin:2% 2%;
+  padding:2%;
+  width:300px;
+}

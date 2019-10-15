@@ -6,7 +6,6 @@ const Nav = () => {
         <div>
             <h2>Auth-Friends</h2>
              <nav>
-                 <Link to='/'>Home</Link>
                  <Link to='/login'>Login</Link>
              </nav>
         </div>
