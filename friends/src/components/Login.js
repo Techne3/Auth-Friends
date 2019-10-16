@@ -24,7 +24,7 @@ const submit = e => {
     .then(res => {
         console.log(res.data)
         localStorage.setItem('token', res.data.payload);
-        //push user to a protected page {friendsDisplay}
+        //push user to a protected page {friendsList}
         props.history.push('/protected')
     })
     .catch(err => console.log(err.res))

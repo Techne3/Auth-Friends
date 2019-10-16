@@ -7,6 +7,7 @@ const Nav = () => {
             <h2>Auth-Friends</h2>
              <nav>
                  <Link to='/login' className="login">Login</Link>
+                 <Link to='/protected' className="login">Friends</Link>
              </nav>
         </div>
     );

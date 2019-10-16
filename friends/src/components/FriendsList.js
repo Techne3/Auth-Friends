@@ -37,7 +37,7 @@ const FriendsList = () => {
             <div className="friendsWrap">
                 {friends.map(friend=> {
                     return(
-                        <FriendsDisplay key={friend.id} friend={friend} />
+                        <FriendsDisplay key={friend.id} friend={friend} setFriends={setFriends}/>
                     )
                 })
                 }
